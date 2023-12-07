@@ -1,4 +1,4 @@
-body {
+#main body {
     margin: auto;
     background: url('./img/back1.jpg');
     max-width: 1000px;
@@ -8,44 +8,44 @@ body {
     background-repeat: no-repeat;
 }
 
-.header {
+#main  .header {
     display: flex;
     justify-content: space-around;
     margin-top: 24px;
     margin-bottom: 200px;
 }
 
-.menu-list {
+#main  .menu-list {
     display: flex;
     list-style-type: none;
 
 
 }
 
-.menu-item:not(:last-child) {
+#main  .menu-item:not(:last-child) {
     margin-right: 63px;
 }
 
 
-.menu-item a {
+#main  .menu-item a {
     text-decoration: none;
     color: aliceblue;
     margin-right: 50px;
 }
 
 
-.active {
+#main .active {
     font-weight: bold;
 }
 
 
-.main-text {
+#main  .main-text {
     font-weight: 10px;
     font-size: 20px;
     line-height: 30px;
 }
 
-.button-order {
+#main  .button-order {
     padding: 10px 30px;
     background: #550D0D;
     border-radius: 5px;
@@ -55,7 +55,7 @@ body {
     line-height: 19px;
 }
 
-.main {
+#main  .main {
     max-width: 500px;
 }
 
@@ -63,3 +63,4 @@ body {
 .logo {
     margin-left: -150px;
 }
+
