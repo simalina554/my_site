@@ -60,34 +60,6 @@
 }
 
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 700px;
-    margin: 20px auto;
-    margin-left: 100px;
-}
-
-.card {
-    width: 150px;
-    border: 2px solid RGB(178,174,251);
-    padding: 20px;
-    margin-left: 5px;
-    height: 300px;
-    background-color: RGB(178,174,251);
-    
-}
-
-.card_image {
-    height: 120px;
-    background-color: #a2a2a2;
-    margin: auto;
-}
-
-.card_description {
-    margin-top: 10px;
-    text-align: center;
-}
 
 
 .news{
@@ -320,3 +292,51 @@
 .col-12_{
     margin-top: 10px;
 }
+
+
+.container {
+    display: flex; /* определяем контейнер как flex-контейнер */
+    justify-content: space-between; /* распределяем элементы по горизонтали */
+    
+    width: 100%; /* ширина контейнера = ширина браузера */
+    margin: 20px auto; /* внешний отступ сверху и снизу по 20px, слева и справа - auto, тем самым центрируя контейнер */
+   }                                             
+   
+   .card {
+    width: 25%; /* ширина карточки = 25% от контейнера */
+    max-width: 300px; /* максимальная ширина 300px */
+    border: 2px solid RGB(178,174,251); /* черная рамка толщиной в 1px */
+    padding: 20px; /* внутренний отступ с каждой стороны по 20px */
+    background-color: RGB(178,174,251);
+    margin: 1px;
+   }
+   
+   .card__image {
+    height: 120px; /* ширина 120px */
+    width: 100%; /* ширина блока под изображение 100% */
+    max-width: 180px; /* максимальная ширина блока под изображение 180px */
+    background-color: #a2a2a2; /* серая заливка блока под изображение */
+    margin: auto; /* автоматические отступы, центрируем блок  под изображение */
+   }
+   
+   .card__description {
+    margin-top: 15px; /* внешний отступ в 15px */
+    text-align: center; /* выравниваем текст по центру */
+   }
+   
+   /* Медиазпросы */
+   /* При ширине браузера 768px и меньше */
+   @media screen and (max-width: 768px) {
+    .card {
+      width: 50%; /* ширина карточки 50% от ширины контейнера */
+      max-width: 100%; /* максимальная ширина карточки 100% от ширины контейнера */
+      margin: auto auto 10px; /* автоматический внешний отступ со всех сторон, но снизу 10px  */
+    }
+   }
+   
+   /* При ширине браузера 480px и меньше */
+   @media screen and (max-width: 480px) {
+    .card {
+      width: 95%; /* ширина карточки 95% от ширины контейнера */
+    }
+   }
