@@ -50,16 +50,6 @@
     line-height: 30px;
 }
 
-.button-order {
-    padding: 10px 30px;
-    background: #550D0D;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-}
-
 .main {
     max-width: 500px;
 }
@@ -163,6 +153,20 @@
 
 }
 
+
+.header2 {
+    display: flex;
+    justify-content: space-around;
+    background: RGB(178,174,251);
+    max-width: 3000px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+    padding-right: 18px;
+    margin-bottom: 20px;
+
+}
+
 #demo{
     margin-bottom: -50px;
 }
@@ -174,12 +178,13 @@
 
 
 .card1 {
-    width: 300px;
-    height: 450px;
-    margin: 0 auto;
+    width: 305px;
+    height: 455px;
     position: relative;
     /* относительное позиционирование родительского элемента, чтобы дочерние .product, .description располагать внутри  card */
-    border: 1px solid #f5dde1;
+    border: 2px solid RGB(178,174,251);
+    margin-bottom: 10px;
+    background-color: RGB(178,174,251);
 }
 
 .product1,
@@ -207,6 +212,11 @@
     text-transform: uppercase;
     color: #fff;
     background-color: #f5dde1;
+    font-size: 20px;
+}
+
+.description1 h2, .description1 p{
+    font-size: 18px;
 }
 
 .product1,
@@ -238,6 +248,33 @@
 }
 
 
-.block1{
-    display: inline;
+.link {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    background-color: #550D0D;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: all 0.8s ease 0s;
+    width: 140px;
+    height: 30px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.link:hover {
+    background-color: #e53935;
+}
+
+
+.button-order {
+    background: #550D0D;
+    border-radius: 5px;
+    color: #fff;
+    width: 150px;
+}
+
+.price{
+    font-size: 20px;
+    text-align: center;
 }
