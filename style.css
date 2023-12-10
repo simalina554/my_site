@@ -1,30 +1,40 @@
 .body {
     margin: auto;
     background: url('./img/back1.jpg');
+    background-size: contain;
     max-width: 1000px;
     width: 100%;
     height: 100%;
     color: #000000;
     background-repeat: no-repeat;
+    min-width: 1000px;
+}
+
+
+
+body{
+    justify-content: space-between;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
-    margin-top: 24px;
-    margin-bottom: 200px;
     background: RGB(178,174,251);
     max-width: 2000px;
     width: 100%;
     height: 100%;
-
+    margin-left: -10px;
+    margin-right: -100px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 18px;
+    margin-bottom: 200px;
 }
+
 
 .menu-list {
     display: flex;
     list-style-type: none;
-
-
 }
 
 .menu-item:not(:last-child) {
@@ -51,7 +61,8 @@
 }
 
 .main {
-    max-width: 500px;
+    max-width: 400px;
+    margin-left: 100px;
 }
 
 
@@ -78,6 +89,9 @@
     margin-top: 100px;
     position: absolute;
     text-align: center;
+    margin-bottom: -20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
   a {
     color: #00aaff;
@@ -141,8 +155,6 @@
 }
 
 
-
-
 .header3 {
     display: flex;
     justify-content: space-around;
@@ -151,6 +163,7 @@
     width: 100%;
     height: 100%;
     padding-right: 18px;
+
 }
 
 .header3 nav{
@@ -202,7 +215,7 @@
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    background-color: #f5dde1;
+    background-color: #f00a30;
     font-size: 20px;
 }
 
@@ -307,7 +320,7 @@
     max-width: 300px; /* максимальная ширина 300px */
     border: 2px solid RGB(178,174,251); /* черная рамка толщиной в 1px */
     padding: 20px; /* внутренний отступ с каждой стороны по 20px */
-    background-color: RGB(178,174,251);
+    background-color: white;
     margin: 1px;
    }
    
@@ -325,18 +338,53 @@
    }
    
    /* Медиазпросы */
-   /* При ширине браузера 768px и меньше */
-   @media screen and (max-width: 768px) {
-    .card {
-      width: 50%; /* ширина карточки 50% от ширины контейнера */
-      max-width: 100%; /* максимальная ширина карточки 100% от ширины контейнера */
-      margin: auto auto 10px; /* автоматический внешний отступ со всех сторон, но снизу 10px  */
+   @media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      /* Дополнительные стили для маленьких экранов */
     }
-   }
-   
-   /* При ширине браузера 480px и меньше */
-   @media screen and (max-width: 480px) {
-    .card {
-      width: 95%; /* ширина карточки 95% от ширины контейнера */
+  
+    .header {
+      display: none; /* Пример: скрыть элемент в заголовке на маленьких экранах */
     }
-   }
+  
+    /* Другие стили и правила для маленьких экранов */
+  }
+
+  /* Стили для экранов шириной более 1200 пикселей */
+  @media only screen and (min-width: 1200px) {
+    body {
+      font-size: 18px;
+      /* Дополнительные стили для больших экранов */
+    }
+    footer{
+        padding-bottom: 10px;
+    }
+  
+    .header {
+      display: block; /* Пример: отображение элемента в заголовке на больших экранах */
+    }
+  
+    /* Другие стили и правила для больших экранов */
+  }
+
+
+  @media only screen and (min-width: 2000px) {
+    body {
+      font-size: 18px;
+      /* Дополнительные стили для больших экранов */
+    }
+    footer{
+        padding-bottom: 10px;
+    }
+
+    .news{
+        margin-top: 500px;
+    }
+  
+    .header {
+      display: block; /* Пример: отображение элемента в заголовке на больших экранах */
+    }
+  
+    /* Другие стили и правила для больших экранов */
+  }
