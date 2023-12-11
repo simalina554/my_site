@@ -63,6 +63,7 @@ body{
 .main {
     max-width: 400px;
     margin-left: 100px;
+    margin-top: 250px;
 }
 
 
@@ -111,10 +112,10 @@ body{
 
   }
 
-  .hr{
+  hr{
     background-color: RGB(178,174,251);
     color: RGB(178,174,251);
-    height: 1px;
+    height: 2px;
     margin-top: -10px;
   }
 
@@ -147,11 +148,11 @@ body{
     max-width: 3000px;
     width: 100%;
     height: 100%;
-    padding-bottom: 5px;
     padding-right: 18px;
     margin-bottom: 20px;
-    padding-top: 5px;
-
+    padding-bottom: 0px;
+    margin-top: -10px;
+    height: 70px;
 }
 
 
@@ -260,10 +261,13 @@ body{
     border-radius: 5px;
     color: #ffffff;
     transition: all 0.8s ease 0s;
-    width: 140px;
-    height: 30px;
+    width: 160px;
+    height: 40px;
     font-size: 20px;
     padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: -7px;
+    margin-bottom: -7px;
 }
 
 .link:hover {
@@ -275,7 +279,8 @@ body{
     background: #550D0D;
     border-radius: 5px;
     color: #fff;
-    width: 150px;
+    width: 160px;
+    height: 40px;
 }
 
 .price{
@@ -296,10 +301,16 @@ body{
 	height: 600px;
 	text-align: center;
 	margin-bottom: 50px;
+  font-size: 15px;
+}
+
+#disblock h1{
+  font-size: 20px;
 }
 
 #contact{
     text-align: center;
+    font-size: 30px;
 }
 
 .col-12_{
@@ -351,6 +362,20 @@ body{
     /* Другие стили и правила для маленьких экранов */
   }
 
+  @media only screen and (max-width: 750px) {
+    body {
+      font-size: 14px;
+      /* Дополнительные стили для маленьких экранов */
+    }
+  
+    .header {
+      display: none; /* Пример: скрыть элемент в заголовке на маленьких экранах */
+    }
+  
+    /* Другие стили и правила для маленьких экранов */
+  }
+
+
   /* Стили для экранов шириной более 1200 пикселей */
   @media only screen and (min-width: 1200px) {
     body {
@@ -375,7 +400,9 @@ body{
       /* Дополнительные стили для больших экранов */
     }
     footer{
-        padding-bottom: 10px;
+        padding-bottom: 30px;
+        margin-bottom: -10px;
+        
     }
 
     .news{
