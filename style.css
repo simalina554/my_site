@@ -415,3 +415,9 @@ body{
   
     /* Другие стили и правила для больших экранов */
   }
+
+
+  .hide{
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
