@@ -421,3 +421,43 @@ body{
     margin-left: 10px;
     margin-bottom: 50px;
   }
+
+
+   /* стили для абзаца */
+   #callback p {
+    color: #fff;
+    padding: 22px;
+   }
+
+   #callback:after {
+    content: 'Обратная связь';
+    background-color: pink;
+   }
+      
+
+ #callback:after {
+  content: 'Обратная связь';
+  background-color: pink;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  padding: 5px 0;
+  width: 150px; /* ширина псевдоэлемента равна высоте блока */
+  position: absolute; /* позиционирование абсолютное */
+  left: 300px; /* позиция слева равен ширине блока #callback */
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+ }
+
+ #callback {
+  width: 300px;
+  height: 150px;
+  background-color: grey;
+  position: sticky;
+  bottom: 30px;
+  transform: translateX(-100%);
+ }
+
+ #callback:hover {
+  transform: translateX(0%);
+  transition: all 0.7s ease;
+ }
